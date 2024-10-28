@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" /> <!--not sure why css won't work-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Form</title>
+</head>
+<header>Enki's Car Rentals</header>
+<body>
+    <main>
+<form>
+    <fieldset>
+        <legend>Care Rental Registry</legend>
+        <label for="pickupInput">PickUp Date</label>
+        <input type="date" value= "2024-11-25" id="pickupInput"> <!--placeholder="mm/dd/yyyy" ||| We also learned that the format for Date is yyyy-mm-dd -->
+        <div> <!--js done--> </div> 
+        <label for="numberOfDaysInput">Number of Days</label> <!--//the FOR and the ID are matching in camelCasing INPUT is there because this is an INPUT BOX !-->
+        <input type="number" value= "3" id="numberOfDaysInput"> <!--Say what kind of html element it is by adding Input towards the end-->
+        <div> <!--js done--> </div>
+        <p>Options</p>
+        <input type="checkbox" id="eTollCheckbox">
+        <label for="eTollCheckbox">Electronic Toll Tag ($4/day)</label>
+        <div> <!--IT WORKS js done--> </div>
+        <input type="checkbox" id="gpsCheckbox">
+        <label for="gpsCheckbox">GPS ($3/day))</label>
+        <div> <!--IT WORKS js done--> </div>
+        <input type="checkbox" id="roadAssistCheckbox">
+        <label for="roadAssistCheckbox">Roadside Assistance ($3/day)</label>
+        <div><!--IT WORKS js done--></div>
+        <!--radio buttons below-->
+        <h4>Under 25</h4>
+        <input type="radio" name="Under25" value="Yes" id="under25YesRadio">
+        <label for="under25YesRadio">Yes</label>
+        <input type="radio" name="Under25" value="No" id="under25NoRadio">
+        <label for="under25NoRadio">No</label>
+        <div></div>
+        <div>        
+        <button onclick="estimateCost()" id="totalCostButton">Estimate Total Cost</button><p> <!--USE onclick this needs a javascript function and formula to estimate the cost.-->
+            <div>
+                <div>Car Rental:.</d0iv>
+                <div>Options:</div>
+                <div>Under 25 surcharge:</div>
+                <div>Total Due:</div>
+            </div>
+        </p>
+    </div>
+    </fieldset>
+</form>
+    </main>
+    <script src="scripts/car_rental.js" ></script>
+</body>
+</html>
